@@ -1,27 +1,37 @@
 // back-end logic
 var name;
+var arrRange = [];
+
 function getRange(inputNumber) {
   if (!Number.isInteger(parseInt(inputNumber))) {
   $("#output").empty().append("Just what do you think you're doing, " + name + "? Please enter <em>whole numbers</em> <strong>only</strong>.");
-} else {
-  var arrRange = [];
-  for (var i = 0; i <= inputNumber; i++) {
-    arrRange.push(i);
-  }
-  for (var j = 0; j < arrRange.length; j++) {
-    var arrNumber = arrRange[j].toString();
-    if (arrNumber.includes("3")) {
-      arrRange[j] = "I'm sorry, " + name + ". I'm afraid I can't do that.";
-    } else if (arrNumber.includes("2")) {
-      arrRange[j] = "Boop!";
-    } else if (arrNumber.includes("1")) {
-      arrRange[j] = "Beep!";
+  } else {
+    for (var i = 0; i <= inputNumber; i++) {
+      arrRange.push(i);
     }
-  }
+    for (var j = 0; j < arrRange.length; j++) {
+      var arrNumber = arrRange[j].toString();
+      if (arrNumber.includes("3")) {
+        arrRange[j] = "I'm sorry, " + name + ". I'm afraid I can't do that.";
+      } else if (arrNumber.includes("2")) {
+        arrRange[j] = "Boop!";
+      } else if (arrNumber.includes("1")) {
+        arrRange[j] = "Beep!";
+      }
+    }
   return arrRange;
-}
+  }
 }
 
+var arrReverseRange = [];
+function getReverseRange(arrRange) {
+  var originalArrLength = arrRange.length
+  for (var i = 0; i < originalArrLength; i++) {
+    var last = arrRange.pop();
+    arrReverseRange.push(last);
+  }
+    return arrReverseRange;
+}
 
 
 // user input logic
@@ -32,6 +42,7 @@ $(document).ready(function() {
     name = $("#input-name").val();
     $(".insertName").empty().append(name);
     $("#questionOne").hide();
+
     $("#questionTwo").show();
     var inputNumber = $("#input-number").val();
     var outputRange = getRange(inputNumber);
@@ -40,9 +51,11 @@ $(document).ready(function() {
     $("#results").show();
     $("#reverseNumber").show();
   });
+
   $("#reverseNumber").submit(function(event) {
     event.preventDefault();
-    alert("I'm working")
-    $("#output2").empty().append('"' + "result" + '"');
+    var reverseRange = getReverseRange(arrRange);
+    reverseResult = reverseRange.join('" "');
+    $("#output2").empty().append('"' + reverseResult + '"');
   });
 });
