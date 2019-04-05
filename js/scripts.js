@@ -1,5 +1,8 @@
 // back-end logic
 function getRange(inputNumber) {
+  if (!Number.isInteger(parseInt(inputNumber))) {
+  $("#output").empty().append("Just what do you think you're doing, Dave? Please enter <em>whole numbers</em> <strong>only</strong>.");
+} else {
   var arrRange = [];
   for (var i = 0; i <= inputNumber; i++) {
     arrRange.push(i);
@@ -15,6 +18,7 @@ function getRange(inputNumber) {
     }
   }
   return arrRange;
+}
 }
 
 
