@@ -28,12 +28,13 @@ Output: "..."Boop!", "Beep!", "Boop!", "I'm sorry, Dave. I'm afraid I can't do t
 
 * _Clone from the following repository: https://github.com/kmgarvey279/Epicodus-track-selector_
 * _Navigate into the main folder and open the index.html file in your web browser of choice._
-*Enter any whole number into the form and press the "submit" button to see your results._
-*After getting your results, you can enter another number and get a different set of results at any time._
+*You will first be prompted to enter your name and press the "submit" button to see your response. Certain names and characters will trigger unique responses._
+*When prompted to enter a whole number, do so press the "submit" button to see your results. Non-whole-numbers will return a unique message._
+*After getting your results, you can enter another number and get a different set of results, or press the "reverse" button to see your results in reverse._
 
 ## Known Bugs
 
-_None at this time_
+_The program does not consistently empty the previous results before displaying the new ones._
 
 ## Support and contact details
 
