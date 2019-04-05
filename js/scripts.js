@@ -12,9 +12,11 @@ function getRange(inputNumber) {
     } else if (arrNumber.includes("2")) {
       arrRange[j] = "Boop!";
       alert(arrRange);
+    } else if (arrNumber.includes("1")) {
+      arrRange[j] = "Beep!";
+      alert(arrRange);
+    }
   }
-}
-
 }
 
 
