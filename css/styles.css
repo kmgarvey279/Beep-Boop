@@ -1,6 +1,13 @@
 body {
   background-color: black;
   color: red;
+  font-family: DejaVu Sans Mono, monospace;
+  font-weight: 100;
+}
+
+h1 {
+  color: darkred;
+  text-align: center;
 }
 
 img {
@@ -16,7 +23,7 @@ img {
   background-color: gray;
 }
 
-#questionTwo {
+#enterNumber {
   display:none;
 }
 
