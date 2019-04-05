@@ -26,9 +26,8 @@ $(document).ready(function() {
 
     var inputNumber = $("#input").val();
     var outputRange = getRange(inputNumber);
-    alert(outputRange)
     result = outputRange.join('" "');
-    $("#output").empty().append('"' + result + '"');
 
+    $("#output").empty().append('"' + result + '"');
   });
 });

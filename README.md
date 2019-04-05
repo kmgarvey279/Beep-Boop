@@ -49,5 +49,5 @@ _jQuery_
 ### License
 
 _This software is licensed under the MIT license._
-
+_Hal 9000 gif by J.-C. Heudin: http://www.jcheudin.fr/playground/playground/hal9000/index.html
 Copyright (c) 2019 **_{Kevin Garvey}_**
