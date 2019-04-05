@@ -40,4 +40,9 @@ $(document).ready(function() {
     $("#results").show();
     $("#reverseNumber").show();
   });
+  $("#reverseNumber").submit(function(event) {
+    event.preventDefault();
+    alert("I'm working")
+    $("#output2").empty().append('"' + "result" + '"');
+  });
 });
