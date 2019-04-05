@@ -27,8 +27,11 @@ function getRange(inputNumber) {
 $(document).ready(function() {
   $("#enterNumber").submit(function(event) {
     event.preventDefault();
-
-    var inputNumber = $("#input").val();
+    var name = $("#input-name").val();
+    $(".insertName").empty().append(name);
+    $("#questionOne").show();
+    
+    var inputNumber = $("#input-number").val();
     var outputRange = getRange(inputNumber);
     result = outputRange.join('" "');
 

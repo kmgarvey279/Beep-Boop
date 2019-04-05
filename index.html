@@ -12,17 +12,28 @@
         <img src="img/hal9000.gif" alt="HAL 9000 pulsing eye">
 
       <form id="enterNumber">
+
         <div class="form-group">
-          <label for="input">"Enter a whole number, Dave."</label>
-          <input id="input" type="text">
+          <label for="input-name">"What is your name?"</label>
+          <input id="input-name" type="text">
         </div>
-        <!-- "Good morning, name" -->
+
+        <div id="questionOne"
+          <p>"Good morning, <span class="insertName"></span>."</p>
+          <div class="form-group">
+            <label for="input-number">"Please enter a whole number, <span class="insertName"></span>."</label>
+            <input id="input-number" type="text">
+          </div>
+        </div>
+
         <button type="submit" class="btn btn-danger">Submit</button>
+
       </form>
 
       <br>
       <div id="results">
         <span id="output"></span>
     </div>
+
   </body>
 </html>

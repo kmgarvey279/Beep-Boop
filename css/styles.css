@@ -11,3 +11,7 @@ img {
 #input {
   background-color: grey;
 }
+
+#questionOne {
+  display:none; 
+}
