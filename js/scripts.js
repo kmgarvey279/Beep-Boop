@@ -7,11 +7,13 @@ function getRange(inputNumber) {
   for (var j = 0; j < arrRange.length; j++) {
     var arrNumber = arrRange[j].toString();
     if (arrNumber.includes("3")) {
-      arrRange[j] = "I'm sorry, Dave. I'm afraid I can't do that."
+      arrRange[j] = "I'm sorry, Dave. I'm afraid I can't do that.";
       alert(arrRange);
-    }
+    } else if (arrNumber.includes("2")) {
+      arrRange[j] = "Boop!";
+      alert(arrRange);
   }
-
+}
 
 }
 
