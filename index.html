@@ -11,32 +11,38 @@
     <div class="container">
       <img src="img/hal9000.gif" alt="HAL 9000 pulsing eye">
 
-      <form id="enterNumber">
 
+      <form id="enterName">
         <div id="questionOne">
           <div class="form-group">
             <label for="input-name">"What is your name?"</label>
             <input id="input-name" type="text">
           </div>
+        <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button><br>
         </div>
-
+      </form>
+      <p>"Good morning, <span class="insertName"></span>."</p>
+      <span id="insertNameMessage"></span>
+      <form id="enterNumber">
         <div id="questionTwo">
-          <span id="insertNameMessage"></span>
-          <p>"Good morning, <span class="insertName"></span>."</p>
+
           <div class="form-group">
             <label for="input-number">"Please enter a whole number, <span class="insertName"></span>."</label>
             <input id="input-number" type="text">
           </div>
+          <button type="submit" class="btn btn-danger btn-lg btn-block">Submit</button><br>
         </div>
-            <button type="submit" value="submitForm" class="btn btn-danger">Submit</button><br>
       </form>
+
       <div id="results">
         <span id="output"></span><br>
-      </div>
+      </div><br>
+
       <form id="reverseNumber">
-        <button type="submit" value="reverseOutput" class="btn btn-warning">Reverse</button>
+        <button type="submit" class="btn btn-warning btn-lg btn-block">Reverse</button><br>
       </form>
       <span id="output2"></span><br>
+
     </div>
   </body>
 </html>
