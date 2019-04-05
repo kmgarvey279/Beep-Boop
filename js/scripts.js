@@ -33,11 +33,11 @@ $(document).ready(function() {
     $(".insertName").empty().append(name);
     $("#questionOne").hide();
     $("#questionTwo").show();
-
     var inputNumber = $("#input-number").val();
     var outputRange = getRange(inputNumber);
     result = outputRange.join('" "');
     $("#output").empty().append('"' + result + '"');
     $("#results").show();
+    $("#reverseNumber").show();
   });
 });
