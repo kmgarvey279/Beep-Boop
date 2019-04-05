@@ -8,8 +8,12 @@ img {
   height: auto;
 }
 
-#input {
+#input-name {
   background-color: grey;
+}
+
+#input-number {
+  background-color: gray;
 }
 
 #questionTwo {
