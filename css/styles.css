@@ -12,6 +12,10 @@ img {
   background-color: grey;
 }
 
-#questionOne {
-  display:none; 
+#questionTwo {
+  display:none;
+}
+
+#results {
+  display:none;
 }

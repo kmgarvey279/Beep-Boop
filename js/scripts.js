@@ -29,12 +29,14 @@ $(document).ready(function() {
     event.preventDefault();
     var name = $("#input-name").val();
     $(".insertName").empty().append(name);
-    $("#questionOne").show();
-    
+    $("#questionOne").hide();
+    $("#questionTwo").show();
+
     var inputNumber = $("#input-number").val();
     var outputRange = getRange(inputNumber);
     result = outputRange.join('" "');
 
     $("#output").empty().append('"' + result + '"');
+    $("#results").show();
   });
 });
